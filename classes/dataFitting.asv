@@ -30,12 +30,20 @@ plot(x,y,'ko'), hold
 A = 1; B = 1;
 coeff = fminsearch('gauss_fit',[A B]);
 
-A = coeff(1)
-B = coeff(2)
 
 x2 = -3:0.1:3;
 y2 = A*exp(-B*x2.^2);
-
 plot(x2,y2,'m-'), hold off
 
 
+function E = gauss_fit(x0)
+A = x0(1); B = x0(2);
+
+x = [-3 -2.2 -1.7 -1.5 -1.3 -1.0 -0.8 -0.5 -0.25 -0.04 0.06 0.15 0.3 ...
+    0.62 1.1 1.25 1.9 2.3];
+y = [-0.2 0.1 0.05 0.17 0.35 0.9 1.2 1.4 1.7 2.1 2.0 1.7 1.5 1.2 0.7 ...
+    0.25 -0.15 0.2];
+
+% least square fit error
+E = sum((A*exp(-B*x.^2)-y).^2);
+end
