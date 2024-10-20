@@ -17,13 +17,4 @@ m = 200;    % generations
 n = 50;     % trials
 n2 = 10;    % kept trials
 
-A = 12 + randn(n,1);
-B = pi/12 + randn(n,1);
-C = 60 + randn(n,1);
-
-for jgen = 1:m
-    for j = 1:n
-        E(j) = sum((A(j)*cos(B(j)*x2)+C(j)-y2).^2)
-    end
-    [Es,Ej] = sort(E); % sort from small to large
-end
+A = 12 + rand()
