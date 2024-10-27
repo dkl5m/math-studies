@@ -6,7 +6,7 @@ d = 0.25;           % damping ratio
 A = [0 1;-w^2 -2*d*w];
 % dot{x} = A*x
 
-dt = 0.1;          % time step
+dt = 0.1;           % time step
 T = 5;              % amount of time to integrate
 x0 = [2; 0];        % initial condition (x=2; v=0);
 
