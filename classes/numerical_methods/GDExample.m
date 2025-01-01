@@ -13,8 +13,8 @@ X = X0;
 Xold = X0;
 
 for iter = 1:max_iter
-    J = FN(X);
-    X = X - lambda*J;
+    g = gradient(X);
+    X = X - lambda*g;
     err(:,iter) = abs(X-Xold);
     Xold = X;
     
@@ -33,8 +33,7 @@ if iter == max_iter
     disp('Method didnt converge within max number of iterations');
 end
 
-function J = FN(X)
-x = X(1); y = X(2);
-F(1,1) =  1/4*x^2 + y^2;
-J = [1/2*x; 2*y];
+function g = gradient(X)
+x = X(1); y = X(2); % F(1,1) =  1/4*x^2 + y^2;
+g = [1/2*x; 2*y];
 end
