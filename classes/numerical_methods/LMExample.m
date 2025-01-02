@@ -1,4 +1,4 @@
-% Levenberg-Marquadt Method (LM) to find the
+% Levenberg-Marquardt Method (LM) to find the
 % root of multiple equations
 
 clc; clear; close all; % initialize IDE
