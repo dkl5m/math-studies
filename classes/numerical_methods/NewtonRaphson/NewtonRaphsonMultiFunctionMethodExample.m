@@ -1,5 +1,6 @@
 % Newton-Raphson Method (NR) to find the
 % root of multiple equations
+% author: klysms
 clc; clear; close all; % initialize IDE
 
 % initial guess, tolerance, iteration, max iteration

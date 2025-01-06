@@ -1,5 +1,6 @@
 % Gradient Descent Method (GD) to find the root of 
 % a single function
+% author: klysms
 clc; clear; close all;  % initialize IDE
 
 % initial guess, tolerance, max iteration

@@ -1,5 +1,6 @@
 % Generalized Halley Method (HM) for multiple functions with 
 % multiple variables
+% author: klysms
 clc; clear; close all; % initialize IDE
 
 % initial guess, tolerance, iteration, max iteration

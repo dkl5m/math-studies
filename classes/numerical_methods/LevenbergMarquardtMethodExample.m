@@ -1,5 +1,6 @@
 % Levenberg-Marquardt Method (LM) to find the
 % root of multiple equations
+% author: klysms
 clc; clear; close all; % initialize IDE
 
 % initial guess, tolerance, iteration, max iteration

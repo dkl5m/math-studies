@@ -1,5 +1,5 @@
 % Newton-Raphson Method to find the root of a single equation
-
+% author: klysms
 clc; clear; close all;  % initialize IDE
 
 % define function and its derivative

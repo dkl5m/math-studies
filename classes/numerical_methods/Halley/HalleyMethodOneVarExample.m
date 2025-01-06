@@ -1,5 +1,6 @@
 % Halley Method (HM) to find the root of 
 % a single function with one variable
+% author: klysms
 clc; clear; close all;  % initialize IDE
 
 % initial guess, tolerance, max iteration
