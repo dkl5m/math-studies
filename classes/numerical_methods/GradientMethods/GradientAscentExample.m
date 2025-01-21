@@ -15,7 +15,7 @@ Xold = X0;
 
 for iter = 1:max_iter
     g = gradient(X);
-    X = X - lambda*g;
+    X = X + lambda*g;
     err(:,iter) = abs(X-Xold);
     Xold = X;
     

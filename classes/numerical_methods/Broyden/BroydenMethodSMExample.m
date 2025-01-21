@@ -48,7 +48,7 @@ end
 function out = Jnumerical(x)
 out = zeros(2,2);
 del = 1e-6;
-dx = [del 0; 0 del];
+dx = del*eye(2);
 out(:,1) = (f(x+dx(:,1))-f(x-dx(:,1)))/(2*del);
 out(:,2) = (f(x+dx(:,2))-f(x-dx(:,2)))/(2*del);
 end
